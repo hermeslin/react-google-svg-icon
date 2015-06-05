@@ -1,8 +1,8 @@
 {
   "name": "react-google-svg-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "google svg icons for react",
-  "main": "./48.jsx",
+  "main": "./",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
