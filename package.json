@@ -8,7 +8,7 @@
     "clear": "rm -rf dist",
     "jshint": "./node_modules/.bin/jsxhint --harmony 'src/**'",
     "babel": "./node_modules/.bin/babel --stage 1 ./src --out-dir ./dist",
-    "publish": "npm run clear && npm run jshint && npm run babel"
+    "prepublish": "npm run clear && npm run jshint && npm run babel"
   },
   "repository": {
     "type": "git",
