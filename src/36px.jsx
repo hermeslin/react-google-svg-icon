@@ -14,7 +14,7 @@ var SvgIcon = React.createClass({
     },
     
     render: function() {
-        var {name, background, fill, style, ...other} = this.props;
+        var {name, fill, style, ...other} = this.props;
         var icon = GoogleSvgIcon[name];        
         var svgStyle;
                 

@@ -1,10 +1,14 @@
 {
   "name": "react-google-svg-icon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "google svg icons for react",
-  "main": "./",
+  "main": "./dist",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rm -rf dist",
+    "jshint": "./node_modules/.bin/jsxhint --harmony 'src/**'",
+    "babel": "./node_modules/.bin/babel --stage 1 ./src --out-dir ./dist",
+    "publish": "npm run clear && npm run jshint && npm run babel"
   },
   "repository": {
     "type": "git",
@@ -18,9 +22,13 @@
   "license": "MIT",
   "dependencies": {
     "object-assign": "^2.0.0"
-  },  
+  },
   "peerDependencies": {
     "react": ">=0.13"
+  },
+  "devDependencies": {
+    "babel": "^5.4.4",
+    "jsxhint": "^0.15.1"
   },
   "bugs": {
     "url": "https://github.com/hermeslin/react-google-svg-icon/issues"
